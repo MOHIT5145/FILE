@@ -6,16 +6,16 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 
-APP_ID = int(os.environ.get("APP_ID", "220348051"))
+APP_ID = int(os.environ.get("APP_ID", "27693415"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "a2f5b4029b334b4b16e20baf43d55a57")
+API_HASH = os.environ.get("API_HASH", "8dc020d35ff99813b494f20955d8c724")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002863960853"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002867277360"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6416933624"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "8115758627"))
 
 #Port
 PORT = os.environ.get("PORT", "8585")
@@ -35,7 +35,7 @@ IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID", "https://t.me/bolomotu/1378") # shareus ka tut_vid he 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002696434512"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002867372136"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -43,7 +43,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nJOIN NOW 👉 @motulinks\nJOIN NOW 👉 @motumoviess") 
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6416933624").split()):
+    for x in (os.environ.get("ADMINS", "8115758627").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -64,7 +64,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(6416933624)
+ADMINS.append(8115758627)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
